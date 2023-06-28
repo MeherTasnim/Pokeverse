@@ -43,6 +43,7 @@ function App() {
 
     return (
         <Container>
+            <center><h1>Pokemon Cards</h1></center>
             <Box display='flex' p={3}>
                 <TextField 
                     label="Pokemon name" 
@@ -51,7 +52,7 @@ function App() {
                 />
             </Box>
 
-            <Row xs={1} md={4} className="g-4">
+            <Row xs={1} md={5} className="g-4">
             {pokemonFiltered.map((pokemon, idx) => (
                 <Col key={idx}>
                 <Card>
